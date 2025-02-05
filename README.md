@@ -11,7 +11,7 @@ cp .env.example .env
 Set your desired SSH_PASSWORD password in the .env file, then start the container.
 
 ```
-docker compose up -d
+docker compose up -d --build
 ```
 
 Then connect using your password via a terminal app.
@@ -20,3 +20,9 @@ Then connect using your password via a terminal app.
 ssh root@host-ip-address -p 222
 ```
 
+You will then have access to the following commands, and should be able to connect using IntelliJ Rider remote backend.
+
+```
+dotnet
+dotnet ef
+```
