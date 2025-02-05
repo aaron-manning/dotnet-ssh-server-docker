@@ -7,7 +7,7 @@ services:
         network_mode: "host"
         volumes:
             - rootData:/root
-            - ../your-folder-with-dotnet-code:/source
+            - ${SOURCE_CODE_DIRECTORY}:/source
         env_file:
             - .env
 

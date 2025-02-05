@@ -8,7 +8,7 @@ This is useful for Jetbrains or VScode remote IDE (via SSH) features if you cann
 cp .env.example .env
 ```
 
-Set your desired SSH_PASSWORD password in the .env file, then start the container.
+Set your desired SSH_PASSWORD password in the .env file, and your source code directory to pass through, then start the container.
 
 ```
 docker compose up -d --build
@@ -20,7 +20,7 @@ Then connect using your password via a terminal app.
 ssh root@host-ip-address -p 222
 ```
 
-You will then have access to the following commands, and should be able to connect using IntelliJ Rider remote backend.
+You will then have access to the following commands, and should be able to connect using IntelliJ Rider remote backend. Any changes stored in the (root) home directory will be persisted.
 
 ```
 dotnet
