@@ -8,7 +8,7 @@ This is useful for Jetbrains or VScode remote IDE (via SSH) features if you cann
 cp .env.example .env
 ```
 
-Set your desired SSH_PASSWORD password in the .env file, and your source code directory to pass through, then start the container.
+Set your desired SSH_PASSWORD password in the .env file, and your SOURCE_CODE_DIRECTORY to pass through, then start the container.
 
 ```
 docker compose up -d --build
