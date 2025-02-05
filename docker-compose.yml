@@ -1,0 +1,16 @@
+services:
+    dotnet-ssh-server-docker:
+        build:
+          context: .
+          args:
+            SSH_PASSWORD: ${SSH_PASSWORD}
+        network_mode: "host"
+        volumes:
+            - rootData:/root
+            - ../your-folder-with-dotnet-code:/source
+        env_file:
+            - .env
+
+volumes:
+  rootData:
+    external: false
